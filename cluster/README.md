@@ -5,7 +5,7 @@ Here I made 3 VMs and wanted to make sure one acts as the **control-plane** whil
 
 `scripts/all-vm-installation.sh` is the first and basic command to run in all 3 VMs. It prepares all the VMs with the common binaries, container runtime and other dependencies needed for Kubernetes.
 
-![Cluster architecture](./architecture/cluster-architecture.png)
+![Cluster architecture](./architecture/cluster-architecture.PNG)
 
 After applying this, all the VMs are in the same state. Now it is time to make one of them the **control-plane**, so we execute:
 
