@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: seedhe-k8s-app
+
+spec:
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: seedhe-k8s-app
+
+  template:
+    metadata:
+      labels:
+        app: seedhe-k8s-app
+
+    spec:
+      containers:
+        - name: seedhe-k8s-app
+          image: pranjalbisen/seedhe-k8s-app:1.0
+
+          ports:
+            - containerPort: 8080
