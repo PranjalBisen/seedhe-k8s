@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: seedhe-k8s-app
+
+spec:
+  type: ClusterIP
+
+  selector:
+    app: seedhe-k8s-app
+
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
